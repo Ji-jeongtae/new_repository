@@ -10,7 +10,7 @@
 .bg-fill {
   position: absolute;
   inset: 0;
-  background: url("../asset/poster.jpg") center/cover no-repeat;
+  background: url("/asset/poster.jpg") center/cover no-repeat;
   opacity: 0.35;
   z-index: 0;
 }
@@ -27,8 +27,9 @@
 .rain {
   position: absolute;
   inset: 0;
-  background: url("../asset/rain.gif") center/cover no-repeat;
+  background: url("/asset/rain.gif") center/cover no-repeat;
   mix-blend-mode: screen;
   opacity: 0.6;
   z-index: 2;
 }
+
