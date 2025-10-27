@@ -19,7 +19,7 @@
 .rain {
   position: absolute;
   inset: 0;
-  background: url("asset/rain.gif") center/cover no-repeat;
+  background: url("/about_time/asset/rain.gif") center/cover no-repeat;
   mix-blend-mode: screen;
   opacity: 0.6;
   z-index: 2;
@@ -56,4 +56,5 @@
   transform: translateX(200);
   opacity: 0.9;
 }
+
 
