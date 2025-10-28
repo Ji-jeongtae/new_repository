@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Time – Responsive Poster</title>
+
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <section id="home" class="screen screen-home">
+      <div class="home-wrap">
+        <div class="home-card">
+          <img
+            src="asset/poster2.png"
+            alt="About Time Poster"
+            class="home-poster"
+          />
+
+          <div class="home-info">
+            <span class="badge">상영예정작</span>
+            <h1 class="home-title">어바웃타임</h1>
+            <p class="home-desc">놓쳐버린 그녀를 다시 만날 수 있을까요?</p>
+
+            <p class="home-promo">
+              &lt;노팅힐&gt;&lt;러브 액츄얼리&gt; 리차드 커티스 각본·감독<br />
+              워킹타이틀이 선사하는 올 겨울 가장 따뜻한 선물!
+            </p>
+
+            <div class="home-meta">
+              <span>장르: 로맨스·드라마</span>
+              <span>개봉: 2013</span>
+            </div>
+
+            <div class="btn-row">
+              <button class="btn btn-view" type="button">포스터 보기</button>
+              <a
+                class="btn btn-more"
+                href="https://namu.wiki/w/%EC%96%B4%EB%B0%94%EC%9B%83%20%ED%83%80%EC%9E%84"
+                target="_blank"
+                >더 많은 정보</a
+              >
+            </div>
+
+            <div class="rating-box">
+              <div class="stars" id="ratingStars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-main text-red">★ ★ ★ ★ ☆</div>
+              <div class="info-sub">평론가 선정</div>
+            </div>
+            <div class="info-card">
+              <div class="info-main">2시간 15분</div>
+              <div class="info-sub">상영시간</div>
+            </div>
+            <div class="info-card">
+              <div class="info-main">12세 관람가</div>
+              <div class="info-sub">등급</div>
+            </div>
+            <div class="info-card">
+              <div class="info-main">8.4/10</div>
+              <div class="info-sub">관객 평점</div>
+            </div>
+          </div>
+
+          <div class="cast-box">
+            <h2 class="cast-title">주요 출연진</h2>
+            <div class="cast-grid">
+              <div class="cast-item">
+                <div class="cast-icon">도</div>
+                <div>
+                  <div class="cast-name">도널 글리슨</div>
+                  <div class="cast-role">팀</div>
+                </div>
+              </div>
+              <div class="cast-item">
+                <div class="cast-icon">레</div>
+                <div>
+                  <div class="cast-name">레이첼 맥아담스</div>
+                  <div class="cast-role">메리</div>
+                </div>
+              </div>
+              <div class="cast-item">
+                <div class="cast-icon">리</div>
+                <div>
+                  <div class="cast-name">리차드 커티스</div>
+                  <div class="cast-role">감독</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <p>© 2025 어바웃타임. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <section id="poster" class="screen screen-poster" aria-hidden="true">
+      <div class="poster">
+        <img src="asset/poster.png" alt="About Time Poster" class="bg" />
+
+        <div class="rain" aria-hidden="true"></div>
+
+        <div class="rain-rev" aria-hidden="true"></div>
+
+        <audio
+          id="rain-audio"
+          src="asset/rain.mp3"
+          loop
+          preload="auto"
+          playsinline
+        ></audio>
+        <audio
+          id="time-audio"
+          src="asset/time.mp3"
+          preload="auto"
+          playsinline
+        ></audio>
+
+        <img class="bg" ... />
+        <div class="rain"></div>
+        <div class="rain-rev"></div>
+
+        <div
+          class="blush woman b1"
+          style="top: 40%; left: 41%; width: 90px; height: 70px"
+        ></div>
+        <div
+          class="blush woman b2"
+          style="top: 38%; left: 52%; width: 80px; height: 62px"
+        ></div>
+        <div
+          class="blush man b1"
+          style="top: 10%; left: 60%; width: 180px; height: 125px"
+        ></div>
+
+        <div class="text center-text">...</div>
+
+        <button class="btn btn-back" type="button">← 돌아가기</button>
+
+        <div class="text center-text">
+          <p class="credit-top">FROM THE CREATOR OF</p>
+          <div class="stack">
+            <p>LOVE ACTUALLY</p>
+            <p>NOTTING HILL</p>
+            <p class="sub">FOUR WEDDINGS AND A FUNERAL</p>
+          </div>
+          <h1 class="title" role="button" aria-pressed="false">ABOUT TIME</h1>
+          <p class="release">THIS NOVEMBER</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="/about_time/js/script.js"></script>
+
+    <script>
+      $(function () {
+        const $home = $("#home");
+        const $poster = $("#poster");
+        const $rain = $(".rain");
+        const $rainRev = $(".rain-rev");
+        const rainBgm = document.getElementById("rain-audio");
+        const timeFx = document.getElementById("time-audio");
+
+        let timeStopped = false;
+
+        $poster.hide().attr("aria-hidden", "true");
+        $rain.css("opacity", "0.6");
+        $rainRev.css("opacity", "0");
+        if (rainBgm) rainBgm.volume = 0.6;
+
+        $(".btn-view").on("click", function (e) {
+          e.preventDefault();
+          $home.fadeOut(150, function () {
+            $poster.fadeIn(400).attr("aria-hidden", "false");
+            if (!timeStopped && rainBgm) {
+              rainBgm.play().catch(() => {});
+            }
+          });
+        });
+
+        $(".btn-back").on("click", function () {
+          $poster.fadeOut(150, function () {
+            $poster.attr("aria-hidden", "true");
+            $home.fadeIn(300);
+
+            timeStopped = false;
+            $rain.css("opacity", "0.6");
+            $rainRev.css("opacity", "0");
+
+            if (timeFx) {
+              timeFx.pause();
+              timeFx.currentTime = 0;
+            }
+            if (rainBgm) {
+              rainBgm.pause();
+              rainBgm.currentTime = 0;
+            }
+          });
+        });
+
+        $(".title").on("click", function () {
+          if (!timeStopped) {
+            timeStopped = true;
+
+            if (rainBgm) {
+              rainBgm.pause();
+            }
+            if (timeFx) {
+              timeFx.currentTime = 0;
+              timeFx.play().catch(() => {});
+            }
+
+            $rain.css("opacity", "0");
+            $rainRev.css("opacity", "0.6");
+
+            $(this).attr("aria-pressed", "true");
+          } else {
+            timeStopped = false;
+
+            if (timeFx) {
+              timeFx.pause();
+              timeFx.currentTime = 0;
+            }
+            if (rainBgm) {
+              rainBgm.play().catch(() => {});
+            }
+
+            $rainRev.css("opacity", "0");
+            $rain.css("opacity", "0.6");
+
+            $(this).attr("aria-pressed", "false");
+          }
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        const $stars = $("#ratingStars .star");
+        let currentRating = 0;
+
+        $stars.on("click", function () {
+          const val = $(this).data("value");
+          if (val === currentRating) {
+            currentRating = 0;
+            $stars.removeClass("active");
+          } else {
+            currentRating = val;
+            $stars.each(function () {
+              const starVal = $(this).data("value");
+              $(this).toggleClass("active", starVal <= val);
+            });
+          }
+        });
+
+        $stars
+          .on("mouseenter", function () {
+            const hoverVal = $(this).data("value");
+            $stars.each(function () {
+              const starVal = $(this).data("value");
+              $(this).css(
+                "color",
+                starVal <= hoverVal ? "#fb7185" : "rgba(148,163,184,0.3)"
+              );
+            });
+          })
+          .on("mouseleave", function () {
+            $stars.each(function () {
+              const starVal = $(this).data("value");
+              $(this).css(
+                "color",
+                starVal <= currentRating ? "#fb7185" : "rgba(148,163,184,0.3)"
+              );
+            });
+          });
+      });
+    </script>
+  </body>
+</html>
